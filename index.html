@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ru" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AURA MARKET | Премиальный Маркетплейс</title>
+    <meta name="description" content="Современный маркетплейс с премиальным дизайном, быстрой фильтрацией и полноценной экосистемой.">
+    
+    <meta property="og:title" content="AURA MARKET | Премиальный Маркетплейс">
+    <meta property="og:description" content="Покупайте товары в лучшем интерфейсе с поддержкой Glassmorphism.">
+    <meta property="og:type" content="website">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo" data-link="home">AURA<span>.</span></a>
+            
+            <div class="nav-search-bar">
+                <input type="text" id="global-search" placeholder="Поиск товаров по названию или категории...">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+
+            <div class="nav-actions">
+                <button id="theme-toggle" class="nav-btn" aria-label="Смена темы"><i class="fa-solid fa-moon"></i></button>
+                <button id="sound-toggle" class="nav-btn" aria-label="Звук"><i class="fa-solid fa-volume-high"></i></button>
+                <button class="nav-btn" data-link="favorites" aria-label="Избранное">
+                    <i class="fa-solid fa-heart"></i>
+                    <span class="badge" id="fav-count">0</span>
+                </button>
+                <button class="nav-btn" data-link="compare" aria-label="Сравнение">
+                    <i class="fa-solid fa-scale-balanced"></i>
+                    <span class="badge" id="compare-count">0</span>
+                </button>
+                <button class="nav-btn nav-cart" data-link="cart" aria-label="Корзина">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    <span class="badge" id="cart-count">0</span>
+                </button>
+                <button class="nav-btn" id="profile-nav-btn" data-link="auth" aria-label="Профиль">
+                    <i class="fa-solid fa-user"></i>
+                </button>
+                <button class="burger-menu" id="burger-toggle" aria-label="Меню">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="mobile-drawer" id="mobile-drawer">
+        <div class="drawer-links">
+            <a href="#" data-link="home"><i class="fa-solid fa-house"></i> Главная</a>
+            <a href="#" data-link="catalog"><i class="fa-solid fa-grid-2"></i> Каталог</a>
+            <a href="#" data-link="favorites"><i class="fa-solid fa-heart"></i> Избранное</a>
+            <a href="#" data-link="compare"><i class="fa-solid fa-scale-balanced"></i> Сравнение</a>
+            <a href="#" data-link="profile" id="mobile-profile-link"><i class="fa-solid fa-user"></i> Профиль</a>
+            <a href="#" data-link="contacts"><i class="fa-solid fa-envelope"></i> Контакты</a>
+        </div>
+    </div>
+
+    <main id="app-container" class="main-content">
+        </main>
+
+    <div class="bottom-nav">
+        <button class="bottom-nav-item" data-link="home">
+            <i class="fa-solid fa-house"></i>
+            <span>Главная</span>
+        </button>
+        <button class="bottom-nav-item" data-link="catalog">
+            <i class="fa-solid fa-compass"></i>
+            <span>Каталог</span>
+        </button>
+        <button class="bottom-nav-item" data-link="cart">
+            <i class="fa-solid fa-bag-shopping"></i>
+            <span class="badge" id="bottom-cart-count">0</span>
+            <span>Корзина</span>
+        </button>
+        <button class="bottom-nav-item" data-link="favorites">
+            <i class="fa-solid fa-heart"></i>
+            <span>Избранное</span>
+        </button>
+        <button class="bottom-nav-item" data-link="profile" id="bottom-profile-btn">
+            <i class="fa-solid fa-user"></i>
+            <span>Профиль</span>
+        </button>
+    </div>
+
+    <script src="sounds.js"></script>
+    <script src="theme.js"></script>
+    <!-- <script src="products.js"></script> -->
+    <script src="storage.js"></script>
+    <script src="auth.js"></script>
+    <script src="cart.js"></script>
+    <script src="admin.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
